@@ -9,7 +9,7 @@ config.vm.provision "shell", path: "backup_script.sh"
 
 
 
-config.vm.define "box1" do |box1|
+config.vm.define "box1" do |box2|
 
 
 
@@ -42,7 +42,7 @@ end
 end
 
 
-config.vm.define "box2" do |box2|
+config.vm.define "box2" do |box1|
 
 
 #box2.vm.provision "shell", path: "backup_script.sh"
