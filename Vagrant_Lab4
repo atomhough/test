@@ -27,7 +27,8 @@ config.vm.define "box1" do |box1|
     end
 
   end
-
+##comment below from Ange
+##change "box3" to "box2"
 config.vm.define "box3" do |box2|
 
     box2.vm.box="debian/jessie64"
@@ -37,7 +38,8 @@ box2.vm.provision "shell", inline: <<-SHELL
 	      sudo apt-get install -y nginx
             SHELL
 
-    
+ ##comment below from Ange
+##change "hss" to "ssh"   
 
     box2.vm.network :forwarded_port, guest: 22, host: 10222, id: "hss"
 
